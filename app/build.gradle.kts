@@ -87,12 +87,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 
-    testImplementation(libs.mockito.kotlin) // O la última versión de mockito-kotlin
-    testImplementation("org.mockito:mockito-inline:5.2.0") // Para mockear clases finales y métodos estáticos si es necesario
+    testImplementation(libs.mockito.kotlin) 
+    testImplementation("org.mockito:mockito-inline:5.2.0")
 
-    // Para probar Flows de Coroutines (especialmente con Turbine)
-    testImplementation("app.cash.turbine:turbine:1.1.0") // O la última versión
 
-    // (Opcional) Si necesitas reglas para coroutines si no usas Turbine para todo
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3") // O la última versión
+    testImplementation("app.cash.turbine:turbine:1.1.0")
+
+
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 }
